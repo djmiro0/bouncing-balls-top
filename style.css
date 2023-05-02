@@ -16,7 +16,6 @@
   position: absolute;
   width: 150px;
   height: 150px;
-  margin: 20px;
   border-radius: 50%;
   animation-duration: var(--animation-duration);
   animation-name: bounce;
@@ -105,5 +104,46 @@
     transform: translateY(0);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ball {
+    width: 150px;
+    height: 150px;
+  }
+  .ball:nth-child(1) {
+    --animation-duration: 3s;
+    top: 70%;
+    left: 20%;
+    background-color: #ed9d20;
+  }
+
+  .ball:nth-child(2) {
+    --animation-duration: 2.5s;
+    top: 80%;
+    left: 35%;
+    background-color: #ed7220;
+  }
+
+  .ball:nth-child(3) {
+    --animation-duration: 3.2s;
+    top: 75%;
+    left: 50%;
+    background-color: #ef5416;
+  }
+
+  .ball:nth-child(4) {
+    --animation-duration: 2.2s;
+    top: 80%;
+    left: 65%;
+    background-color: #ea4221;
+  }
+
+  .ball:nth-child(5) {
+    --animation-duration: 3.5s;
+    top: 78%;
+    left: 80%;
+    background-color: #ea2127;
   }
 }

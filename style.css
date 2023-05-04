@@ -19,6 +19,7 @@
   border-radius: 50%;
   animation-duration: var(--animation-duration);
   animation-name: bounce;
+  animation-fill-mode: none;
 }
 
 /*  every ball has a separate duration */
@@ -108,35 +109,35 @@
     height: 150px;
   }
   .ball:nth-child(1) {
-    --animation-duration: 3s;
+    --animation-duration: 5s;
     top: 75%;
     left: 22%;
     background-color: #ed9d20;
   }
 
   .ball:nth-child(2) {
-    --animation-duration: 2.5s;
+    --animation-duration: 4.5s;
     top: 80%;
     left: 35%;
     background-color: #ed7220;
   }
 
   .ball:nth-child(3) {
-    --animation-duration: 3.2s;
+    --animation-duration: 5.2s;
     top: 75%;
     left: 50%;
     background-color: #ef5416;
   }
 
   .ball:nth-child(4) {
-    --animation-duration: 2.2s;
+    --animation-duration: 4.2s;
     top: 80%;
     left: 65%;
     background-color: #ea4221;
   }
 
   .ball:nth-child(5) {
-    --animation-duration: 3.5s;
+    --animation-duration: 5.5s;
     top: 78%;
     left: 80%;
     background-color: #ea2127;

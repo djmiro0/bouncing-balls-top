@@ -104,42 +104,86 @@
 
 /* responsive */
 @media (max-width: 1000px) {
+  @keyframes bounce {
+    0% {
+      transform: translateY(-1500px);
+      animation-timing-function: ease-in;
+    }
+    25% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    38% {
+      transform: translateY(-500px);
+      animation-timing-function: ease-in;
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    60% {
+      transform: translateY(-200px);
+      animation-timing-function: ease-in;
+    }
+    70% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+
+    80% {
+      transform: translateY(-100px);
+      animation-timing-function: ease-in;
+    }
+    88% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+
+    94% {
+      transform: translateY(-35px);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
   .ball {
     width: 150px;
     height: 150px;
   }
   .ball:nth-child(1) {
     --animation-duration: 5s;
-    top: 60%;
-    left: 5%;
+    bottom: 0%;
+    left: 2%;
     background-color: #ea2127;
   }
 
   .ball:nth-child(2) {
     --animation-duration: 4.5s;
-    top: 80%;
+    bottom: 0%;
     left: 10%;
     background-color: #ed7220;
   }
 
   .ball:nth-child(3) {
     --animation-duration: 5.2s;
-    top: 65%;
+    bottom: 0%;
     left: 20%;
     background-color: #ef5416;
   }
 
   .ball:nth-child(4) {
     --animation-duration: 4.2s;
-    top: 80%;
+    bottom: 0%;
     left: 25%;
     background-color: #ea4221;
   }
 
   .ball:nth-child(5) {
     --animation-duration: 5.5s;
-    top: 70%;
-    left: 18%;
+    bottom: 0%;
+    left: 15%;
     background-color: #ed9d20;
+    z-index: -1;
   }
 }

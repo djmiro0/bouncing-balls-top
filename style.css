@@ -20,6 +20,7 @@
   animation-duration: var(--animation-duration);
   animation-name: bounce;
   animation-fill-mode: none;
+  opacity: 0;
 }
 
 /*  every ball has a separate duration */
@@ -62,6 +63,7 @@
   0% {
     transform: translateY(-800px);
     animation-timing-function: ease-in;
+    opacity: 1;
   }
   25% {
     transform: translateY(0);
@@ -96,9 +98,11 @@
   94% {
     transform: translateY(-35px);
     animation-timing-function: ease-in;
+    opacity: 0.5;
   }
   100% {
     transform: translateY(0);
+    opacity: 0;
   }
 }
 

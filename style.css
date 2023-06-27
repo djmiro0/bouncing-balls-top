@@ -58,7 +58,7 @@
   left: 18%;
   background-color: #ea2127;
 }
-/* animation */
+/* ANIMATION */
 @keyframes bounce {
   0% {
     transform: translateY(-800px);
@@ -98,20 +98,19 @@
   94% {
     transform: translateY(-35px);
     animation-timing-function: ease-in;
-    opacity: 0.5;
   }
   100% {
     transform: translateY(0);
-    opacity: 0;
   }
 }
 
-/* responsive */
+/* RESPONSIVE */
 @media (max-width: 1000px) {
   @keyframes bounce {
     0% {
       transform: translateY(-1500px);
       animation-timing-function: ease-in;
+      opacity: 1;
     }
     25% {
       transform: translateY(0);
